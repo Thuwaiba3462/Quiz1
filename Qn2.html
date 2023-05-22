@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Group Work</title></head>
+    <body><h1>Self Tag</h1>
+        <script>
+            const Regex = /^<\w+(?:\s+\w+="[^"]*")*\s*\/>$/;
+            const tag1 = "<img src=\"foo.jpg\" />";
+            const tag2 = "</>";
+            const tag3 = "<img />";
+            const tag4 = "<img src= />";
+            const tag5 = "<a href=\"foo.html\" id=\"stuff\" />";
+
+            console.log(Regex.test(tag1));
+            console.log(Regex.test(tag2));
+            console.log(Regex.test(tag3));
+            console.log(Regex.test(tag4));
+            console.log(Regex.test(tag5));
+
+        </script>
+
+    </body>
+</html>
